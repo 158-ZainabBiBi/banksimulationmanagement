@@ -1,7 +1,7 @@
 export const setting = {
   AppsStorePath: "http://uog.apps.cwiztech.com/#/",
   LoginAppPath: "http://uog.accounts.cwiztech.com/#/",
-  application_ID: "APPLICATIONNAME",
+  application_ID: "BanksimulationManagementDev",
 
   companyName: 'University of Gujrat',
   companyShortName: 'UOG',
@@ -10,8 +10,9 @@ export const setting = {
   loginBanner1: 'http://cwiztech.com/design/images/intro-back.jpeg',
   icon: 'http://cwiztech.com/design/images/favicon.ico',
 
-  service_NAME: 'SERVICENAME',
+  service_NAME: 'LOOKUP',
+  banksimulationservice_NAME: 'BANKSIMULATION',
+
   isHash: '/#',
   redirctPath: '',
 };
-  
