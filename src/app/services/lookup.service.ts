@@ -124,6 +124,16 @@ export class LookupService {
     return this._HttpCallServieService_.api(postData);
   }
 
+  lookupAll(data) {
+    var postData = {
+      service_NAME: setting.service_NAME,
+      request_TYPE: "POST",
+      request_URI: "lookup/entity/all",
+      request_BODY: JSON.stringify({ entityname: data })
+    }
+    return this._HttpCallServieService_.api(postData);
+  }
+
   entityList() {
     var postData = {
       service_NAME: setting.service_NAME,
