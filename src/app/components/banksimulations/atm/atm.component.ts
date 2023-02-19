@@ -31,7 +31,7 @@ export class AtmComponent implements OnInit {
   atmsAll = [];
   atm = {
       atm_ID: 0,
-      atm_DESCRIPTION: "",
+      ATM_DESCRIPTION: "",
       isactive:true,
   }
 
@@ -81,7 +81,7 @@ export class AtmComponent implements OnInit {
   add() {
     this.atm = {
       atm_ID: 0,
-      atm_DESCRIPTION: "",
+      ATM_DESCRIPTION: "",
       isactive: true,
     };
   }

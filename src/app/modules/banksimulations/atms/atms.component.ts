@@ -38,7 +38,7 @@ export class AtmsComponent implements OnInit {
   edit(row) {
     this.editatm.atm = {
       atm_ID: row.data.atm_ID,
-      atm_DESCRIPTION:row.data.atm_DESCRIPTION,
+      ATM_DESCRIPTION:row.data.ATM_DESCRIPTION,
       isactive: row.data.isactive
     };
     if (row.data.isactive=="Y") {

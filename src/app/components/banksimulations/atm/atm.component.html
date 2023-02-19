@@ -7,7 +7,7 @@
           <ng-select [(ngModel)]="atmID" [disabled]="disabled" name="atmID">
               <ng-option *ngFor="let atm of atms" [value]="atm.atm_ID"
                   [disabled]="disabled">
-                  {{ atm.atm_DESCRIPTION }}
+                  {{ atm.ATM_DESCRIPTION }}
               </ng-option>
           </ng-select>
       </div>
@@ -39,7 +39,7 @@
                       <dxo-selection mode="single"></dxo-selection>
                       <dxi-column [width]="75" [allowFiltering]="false" [allowSorting]="false" alignment="center"
                           cellTemplate="cellTemplate"> </dxi-column>
-                      <dxi-column dataField="atm_DESCRIPTION" caption="Description" cssClass="myClass" alignment="center"></dxi-column>
+                      <dxi-column dataField="ATM_DESCRIPTION" caption="Description" cssClass="myClass" alignment="center"></dxi-column>
                       <dxi-column dataField="isactive" caption="Active" cssClass="myClass"
                           alignment="center"></dxi-column>
 
@@ -71,8 +71,8 @@
                       <div class="col-md-12">
                           <div class="form-group">
                               <label class="control-label"> Description </label>
-                              <textarea rows="3" type="textarea" class="form-control" name="atm_DESCRIPTION"
-                                  length="500" [(ngModel)]="atm.atm_DESCRIPTION"></textarea>
+                              <textarea rows="3" type="textarea" class="form-control" name="ATM_DESCRIPTION"
+                                  length="500" [(ngModel)]="atm.ATM_DESCRIPTION"></textarea>
                           </div>
                       </div>
                   </div>
@@ -105,8 +105,8 @@
                       <div class="col-md-12">
                           <div class="form-group">
                               <label class="control-label"> Description</label>
-                              <textarea rows="3" type="textarea" class="form-control" name="atm_DESCRIPTION"
-                                  maxlength="500" [(ngModel)]="atm.atm_DESCRIPTION"></textarea>
+                              <textarea rows="3" type="textarea" class="form-control" name="ATM_DESCRIPTION"
+                                  maxlength="500" [(ngModel)]="atm.ATM_DESCRIPTION"></textarea>
                           </div>
                       </div>
                   </div>
