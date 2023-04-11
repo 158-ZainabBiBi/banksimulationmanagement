@@ -13,10 +13,23 @@ export class ServicesComponent implements OnInit {
   constructor(
     private toastrservice: ToastrService,
     private onfailservice: OnFailService,
-    private router : Router,
+    private router: Router,
   ) { }
 
   ngOnInit(): void {
+    // show the first div by default
+    this.showDiv(1);
+  }
+
+  showDiv(index: number): void {
+    const divs = document.querySelectorAll('.tab');
+    divs.forEach((div, i) => {
+      if (i === index - 1) {
+        (div as HTMLElement).style.display = "block";
+      } else {
+        (div as HTMLElement).style.display = "none";
+      }
+    });
   }
 
 }
