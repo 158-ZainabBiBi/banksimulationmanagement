@@ -13,10 +13,22 @@ export class IndexComponent implements OnInit {
   constructor(
     private toastrservice: ToastrService,
     private onfailservice: OnFailService,
-    private router : Router,
+    private router: Router,
   ) { }
 
   ngOnInit(): void {
+  }
+
+  showcontact() {
+    this.router.navigate(["/home/customers"], {});
+  }
+
+  showabout() {
+    this.router.navigate(["/home/tellers"], {});
+  }
+
+  showservices() {
+    this.router.navigate(["/home/advisors"], {});
   }
 
 }

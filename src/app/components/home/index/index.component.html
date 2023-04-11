@@ -30,94 +30,46 @@
   <!-- Page Content -->
   <!-- Banner Starts Here -->
   <div class="main-banner header-text" id="top">
-    <div class="Modern-Slider slick-initialized slick-slider slick-dotted" role="toolbar"><button
-        class="PrevArrow slick-arrow" style=""></button>
+    <div class="Modern-Slider">
       <!-- Item -->
-      <div aria-live="polite" class="slick-list">
-        <div class="slick-track" role="listbox"
-          style="opacity: 1; width: 9515px; transform: translate3d(-3806px, 0px, 0px);">
-          <div class="item item-3 slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" tabindex="-1"
-            style="width: 1903px;">
-            <div class="img-fill">
-              <div class="text-content">
-                <h6>we have a solid background</h6>
-                <h4>Market Analysis<br>&amp; Statistics</h4>
-                <p>Vivamus ut tellus mi. Nulla nec cursus elit, id vulputate mi. Sed nec cursus augue.
-                  Phasellus lacinia ac sapien vitae dapibus. Mauris ut dapibus velit cras interdum
-                  nisl ac urna tempor mollis.</p>
-                <a href="../about/about.component.html" class="filled-button" tabindex="-1">learn
-                  more</a>
-              </div>
-            </div>
-          </div>
-          <div class="item item-1 slick-slide" data-slick-index="0" aria-hidden="true" tabindex="-1" role="option"
-            aria-describedby="slick-slide00" style="width: 1903px;">
-            <div class="img-fill">
-              <div class="text-content">
-                <h6>we are ready to help you</h6>
-                <h4>Financial Analysis<br>&amp; Consulting</h4>
-                <p>This finance HTML template is 100% free of charge provided by TemplateMo for
-                  everyone. You can download, edit and use this layout for your business website.</p>
-                <a href="../contact/contact.component.html" class="filled-button" tabindex="-1">contact
-                  us</a>
-              </div>
-            </div>
-          </div>
-          <div class="item item-2 slick-slide slick-current slick-active" data-slick-index="1" aria-hidden="false"
-            tabindex="-1" role="option" aria-describedby="slick-slide01" style="width: 1903px;">
-            <div class="img-fill">
-              <div class="text-content">
-                <h6>we are here to support you</h6>
-                <h4>Accounting<br>&amp; Management</h4>
-                <p>You are allowed to use this template for your company websites. You are NOT allowed
-                  to re-distribute this template ZIP file on any template download website. Please
-                  contact TemplateMo for more detail.</p>
-                <a href="../services/services.component.html" class="filled-button" tabindex="0">our
-                  services</a>
-              </div>
-            </div>
-          </div>
-          <div class="item item-3 slick-slide" data-slick-index="2" aria-hidden="true" tabindex="-1" role="option"
-            aria-describedby="slick-slide02" style="width: 1903px;">
-            <div class="img-fill">
-              <div class="text-content">
-                <h6>we have a solid background</h6>
-                <h4>Market Analysis<br>&amp; Statistics</h4>
-                <p>Vivamus ut tellus mi. Nulla nec cursus elit, id vulputate mi. Sed nec cursus augue.
-                  Phasellus lacinia ac sapien vitae dapibus. Mauris ut dapibus velit cras interdum
-                  nisl ac urna tempor mollis.</p>
-                <a href="../about/about.component.html" class="filled-button" tabindex="-1">learn
-                  more</a>
-              </div>
-            </div>
-          </div>
-          <div class="item item-1 slick-slide slick-cloned" data-slick-index="3" aria-hidden="true" tabindex="-1"
-            style="width: 1903px;">
-            <div class="img-fill">
-              <div class="text-content">
-                <h6>we are ready to help you</h6>
-                <h4>Financial Analysis<br>&amp; Consulting</h4>
-                <p>This finance HTML template is 100% free of charge provided by TemplateMo for
-                  everyone. You can download, edit and use this layout for your business website.</p>
-                <a href="../contact/contact.component.html" class="filled-button" tabindex="-1">contact
-                  us</a>
-              </div>
-            </div>
+      <div class="item item-1">
+        <div class="img-fill">
+          <div class="text-content">
+            <h6>we are ready to help you</h6>
+            <h4>Financial Analysis<br>&amp; Consulting</h4>
+            <p>This finance HTML template is 100% free of charge provided by TemplateMo for everyone. You can download,
+              edit and use this layout for your business website.</p>
+            <a (click)="showcontact()" class="filled-button">contact us</a>
           </div>
         </div>
       </div>
-
       <!-- // Item -->
-      <button class="NextArrow.slick-arrow" style=""></button>
-      <ul class="slick-dots" style="display: block;" role="tablist">
-        <li class="" aria-hidden="true" role="presentation" aria-selected="true" aria-controls="navigation00"
-          id="slick-slide00"><button type="button" data-role="none" role="button" tabindex="0">1</button></li>
-        <li aria-hidden="false" role="presentation" aria-selected="false" aria-controls="navigation01"
-          id="slick-slide01" class="slick-active"><button type="button" data-role="none" role="button"
-            tabindex="0">2</button></li>
-        <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation02" id="slick-slide02"
-          class=""><button type="button" data-role="none" role="button" tabindex="0">3</button></li>
-      </ul>
+      <!-- Item -->
+      <div class="item item-2">
+        <div class="img-fill">
+          <div class="text-content">
+            <h6>we are here to support you</h6>
+            <h4>Accounting<br>&amp; Management</h4>
+            <p>You are allowed to use this template for your company websites. You are NOT allowed to re-distribute this
+              template ZIP file on any template download website. Please contact TemplateMo for more detail.</p>
+            <a (click)="showservices()" class="filled-button">our services</a>
+          </div>
+        </div>
+      </div>
+      <!-- // Item -->
+      <!-- Item -->
+      <div class="item item-3">
+        <div class="img-fill">
+          <div class="text-content">
+            <h6>we have a solid background</h6>
+            <h4>Market Analysis<br>&amp; Statistics</h4>
+            <p>Vivamus ut tellus mi. Nulla nec cursus elit, id vulputate mi. Sed nec cursus augue. Phasellus lacinia ac
+              sapien vitae dapibus. Mauris ut dapibus velit cras interdum nisl ac urna tempor mollis.</p>
+            <a (click)="showabout()" class="filled-button">learn more</a>
+          </div>
+        </div>
+      </div>
+      <!-- // Item -->
     </div>
   </div>
   <!-- Banner Ends Here -->
