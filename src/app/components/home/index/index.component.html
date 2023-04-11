@@ -28,51 +28,55 @@
   </div>
 
   <!-- Page Content -->
-  <!-- Banner Starts Here -->
+  <!-- Banner -->
   <div class="main-banner header-text" id="top">
     <div class="Modern-Slider">
-      <!-- Item -->
-      <div class="item item-1">
-        <div class="img-fill">
-          <div class="text-content">
-            <h6>we are ready to help you</h6>
-            <h4>Financial Analysis<br>&amp; Consulting</h4>
-            <p>This finance HTML template is 100% free of charge provided by TemplateMo for everyone. You can download,
-              edit and use this layout for your business website.</p>
-            <a (click)="showcontact()" class="filled-button">contact us</a>
-          </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="../../../../assets/images/slide_01.jpg" style="width:100%">
+        <div class="text-content item">
+          <h6>we are ready to help you</h6>
+          <h4>Financial Analysis<br>&amp; Consulting</h4>
+          <p>This finance HTML template is 100% free of charge provided by TemplateMo for everyone. You can download,
+            edit and use this layout for your business website.</p>
+          <a (click)="showcontact()" class="filled-button">contact us</a>
         </div>
       </div>
-      <!-- // Item -->
-      <!-- Item -->
-      <div class="item item-2">
-        <div class="img-fill">
-          <div class="text-content">
-            <h6>we are here to support you</h6>
-            <h4>Accounting<br>&amp; Management</h4>
-            <p>You are allowed to use this template for your company websites. You are NOT allowed to re-distribute this
-              template ZIP file on any template download website. Please contact TemplateMo for more detail.</p>
-            <a (click)="showservices()" class="filled-button">our services</a>
-          </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="../../../../assets/images/slide_02.jpg" style="width:100%">
+        <div class="text-content item">
+          <h6>we are here to support you</h6>
+          <h4>Accounting<br>&amp; Management</h4>
+          <p>You are allowed to use this template for your company websites. You are NOT allowed to re-distribute this
+            template ZIP file on any template download website. Please contact TemplateMo for more detail.</p>
+          <a (click)="showservices()" class="filled-button">our services</a>
         </div>
       </div>
-      <!-- // Item -->
-      <!-- Item -->
-      <div class="item item-3">
-        <div class="img-fill">
-          <div class="text-content">
-            <h6>we have a solid background</h6>
-            <h4>Market Analysis<br>&amp; Statistics</h4>
-            <p>Vivamus ut tellus mi. Nulla nec cursus elit, id vulputate mi. Sed nec cursus augue. Phasellus lacinia ac
-              sapien vitae dapibus. Mauris ut dapibus velit cras interdum nisl ac urna tempor mollis.</p>
-            <a (click)="showabout()" class="filled-button">learn more</a>
-          </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="../../../../assets/images/slide_03.jpg" style="width:100%">
+        <div class="text-content item">
+          <h6>we have a solid background</h6>
+          <h4>Market Analysis<br>&amp; Statistics</h4>
+          <p>Vivamus ut tellus mi. Nulla nec cursus elit, id vulputate mi. Sed nec cursus augue. Phasellus lacinia ac
+            sapien vitae dapibus. Mauris ut dapibus velit cras interdum nisl ac urna tempor mollis.</p>
+          <a (click)="showabout()" class="filled-button">learn more</a>
         </div>
       </div>
-      <!-- // Item -->
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
     </div>
   </div>
-  <!-- Banner Ends Here -->
 
   <div class="request-form">
     <div class="container">
@@ -82,7 +86,7 @@
           <span>Mauris ut dapibus velit cras interdum nisl ac urna tempor mollis.</span>
         </div>
         <div class="col-md-4">
-          <a href="../contact/contact.component.html" class="border-button">Contact Us</a>
+          <a (click)="showcontact()" class="border-button">Contact Us</a>
         </div>
       </div>
     </div>
@@ -99,34 +103,34 @@
         </div>
         <div class="col-md-4">
           <div class="service-item">
-            <img src="assets/images/service_01.jpg" alt="">
+            <img src="../../../../assets/images/service_01.jpg" alt="">
             <div class="down-content">
               <h4>Digital Currency</h4>
               <p>Sed tincidunt dictum lobortis. Aenean tempus diam vel augue luctus dignissim. Nunc ornare
                 leo tortor.</p>
-              <a href="" class="filled-button">Read More</a>
+              <a (click)="showservices()" class="filled-button">Read More</a>
             </div>
           </div>
         </div>
         <div class="col-md-4">
           <div class="service-item">
-            <img src="assets/images/service_02.jpg" alt="">
+            <img src="../../../../assets/images/service_02.jpg" alt="">
             <div class="down-content">
               <h4>Market Analysis</h4>
               <p>Sed tincidunt dictum lobortis. Aenean tempus diam vel augue luctus dignissim. Nunc ornare
                 leo tortor.</p>
-              <a href="" class="filled-button">Read More</a>
+              <a (click)="showservices()" class="filled-button">Read More</a>
             </div>
           </div>
         </div>
         <div class="col-md-4">
           <div class="service-item">
-            <img src="assets/images/service_03.jpg" alt="">
+            <img src="../../../../assets/images/service_03.jpg" alt="">
             <div class="down-content">
               <h4>Historical Data</h4>
               <p>Sed tincidunt dictum lobortis. Aenean tempus diam vel augue luctus dignissim. Nunc ornare
                 leo tortor.</p>
-              <a href="" class="filled-button">Read More</a>
+              <a (click)="showservices()" class="filled-button">Read More</a>
             </div>
           </div>
         </div>
@@ -189,7 +193,7 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="left-image">
-                  <img src="assets/images/more-info.jpg" alt="">
+                  <img src="../../../../assets/images/more-info.jpg" alt="">
                 </div>
               </div>
               <div class="col-md-6 align-self-center">
@@ -200,7 +204,7 @@
                     conse quat tellus nibh, id molestie felis sagittis ut. Nam ullamcorper tempus
                     ipsum in cursus<br><br>Praes end at dictum metus. Morbi id hendrerit lectus, nec
                     dapibus ex. Etiam ipsum quam, luctus eu egestas eget, tincidunt</p>
-                  <a href="#" class="filled-button">Read More</a>
+                  <a (click)="showabout()" class="filled-button">Read More</a>
                 </div>
               </div>
             </div>
@@ -338,10 +342,10 @@
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Additional Scripts -->
-  <script src="assets/js/custom.js"></script>
-  <script src="assets/js/owl.js"></script>
-  <script src="assets/js/slick.js"></script>
-  <script src="assets/js/accordions.js"></script>
+  <script src="assets/images/js/custom.js"></script>
+  <script src="assets/images/js/owl.js"></script>
+  <script src="assets/images/js/slick.js"></script>
+  <script src="assets/images/js/accordions.js"></script>
 
   <script language="text/Javascript">
     cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field

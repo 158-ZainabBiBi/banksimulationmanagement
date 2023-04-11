@@ -32,4 +32,16 @@ export class ServicesComponent implements OnInit {
     });
   }
 
+  showcontact() {
+    this.router.navigate(["/home/customers"], {});
+  }
+
+  showabout() {
+    this.router.navigate(["/home/tellers"], {});
+  }
+
+  showservices() {
+    this.router.navigate(["/home/advisors"], {});
+  }
+
 }
