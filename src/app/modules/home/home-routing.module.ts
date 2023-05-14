@@ -10,20 +10,15 @@ import { AdvisorsComponent } from '../../modules/banksimulations/advisors/adviso
 import { AtmsComponent } from '../../modules/banksimulations/atms/atms.component';
 import { CustomersComponent } from '../../modules/banksimulations/customers/customers.component';
 
-import { IndexComponent } from 'src/app/components/home/index/index.component';
-import { ServicesComponent } from 'src/app/components/home/services/services.component';
-import { ContactComponent } from 'src/app/components/home/contact/contact.component';
-import { AboutComponent } from 'src/app/components/home/about/about.component';
-
 const routes: Routes = [{
   path: '', component: HomeComponent,
   children: [
     { path: 'dashboard', component: DashboardComponent },
 
-    { path: 'tellers', component: AboutComponent },
-    { path: 'customers', component: ContactComponent },
-    { path: 'atms', component: IndexComponent },
-    { path: 'advisors', component: ServicesComponent },
+    { path: 'tellers', component: TellersComponent },
+    { path: 'customers', component: CustomersComponent },
+    { path: 'atms', component: AtmsComponent },
+    { path: 'advisors', component: AdvisorsComponent },
 
     { path: '', redirectTo: 'dashboard' },
     { path: '**', component: NotfoundComponent }
